@@ -1,0 +1,42 @@
+.pokemon-list {
+  position: relative;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 2fr));
+  grid-auto-rows: 125px;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.decoration-bulat {
+  position: absolute;
+  top: -130px;
+  right: -145px;
+  opacity: 0.4;
+  transform: scale(0.6) rotate(190deg);
+  z-index: -1;
+}
+
+.decoration-slide {
+  position: fixed;
+  bottom: 1.3rem;
+  right: 2rem;
+  width: 55px;
+  height: 55px;
+  z-index: 500;
+  color: var(--white);
+  background: #697acf;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
