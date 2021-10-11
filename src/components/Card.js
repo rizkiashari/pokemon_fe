@@ -1,8 +1,6 @@
-import { useHistory } from "react-router";
 import "../pages/style/Card.css";
 
 const Card = ({ color, types, sprites, name, id }) => {
-  const router = useHistory();
   return (
     <div>
       <div className={`pokemon-item ${color}`}>

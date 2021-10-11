@@ -14,7 +14,7 @@ const Details = ({ show, setShow, dataPokomen }) => {
       setIsFavorite(false);
     }
   }, [dataPokomen]);
-  console.log("Data", dataPokomen);
+
   return (
     <>
       {dataPokomen && (
