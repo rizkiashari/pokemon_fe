@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Card from "../components/Card";
 
 import { useApp } from "../context/AppContext";
+import Details from "./Details";
 
 const myList = () => {
   const { addPokemon } = useApp();
@@ -43,6 +44,11 @@ const myList = () => {
           <p className='no-pokemon'>Anda Belum memilki pokemon</p>
         )}
       </div>
+      <Details
+        show={showDetail}
+        setShow={setShowDetail}
+        dataPokomen={pokemonDetail}
+      />
     </div>
   );
 };
