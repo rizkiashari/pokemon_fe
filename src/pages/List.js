@@ -65,12 +65,12 @@ const List = () => {
               );
             })}
         </div>
+        <Details
+          show={showDetail}
+          setShow={setShowDetail}
+          dataPokomen={pokemonDetail}
+        />
       </div>
-      <Details
-        show={showDetail}
-        setShow={setShowDetail}
-        dataPokomen={pokemonDetail}
-      />
     </>
   );
 };
