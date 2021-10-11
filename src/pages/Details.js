@@ -15,6 +15,8 @@ const Details = ({ show, setShow, dataPokomen }) => {
     }
   }, [dataPokomen]);
 
+  console.log(dataPokomen);
+
   return (
     <>
       {dataPokomen && (
@@ -32,7 +34,7 @@ const Details = ({ show, setShow, dataPokomen }) => {
           <>
             <div className='heading'>
               <div>
-                <h1>{dataPokomen.name}</h1>
+                <h1 style={{ zIndex: 100 }}>{dataPokomen.name}</h1>
                 <div className='pokemon-types'>
                   {dataPokomen.types.map((type, index) => (
                     <div className='pokemon-type' key={index}>
