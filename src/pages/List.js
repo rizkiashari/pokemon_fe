@@ -138,11 +138,11 @@ const List = () => {
                     </div>
                   );
                 })}
+              {addPokemon.length === 0 && (
+                <p style={{ height: "100%" }}>Data Pokemon Tidak Ada</p>
+              )}
             </div>
           </>
-        )}
-        {addPokemon.length === 0 && (
-          <p style={{ height: "100%" }}>Data Pokemon Tidak Ada</p>
         )}
       </div>
       <Details
