@@ -3,10 +3,9 @@
   --background2: var(--green2);
   position: fixed;
   width: 100%;
-  height: 100%;
   top: 100%;
   left: 0;
-  max-height: 100vh;
+  height: 100%;
   background-color: var(--background1);
   transition: 0.5s ease;
   overflow: auto;
@@ -80,11 +79,88 @@
   justify-content: space-between;
   align-items: center;
 }
-.no-pokemon {
-  font-size: 20px;
-  color: #45adaa;
-}
+
 .pokemon-detail .heading p {
   font-weight: 600;
   padding-right: 0.5rem;
+}
+
+.pokemon-detail .description {
+  position: relative;
+  background-color: var(--white);
+  color: var(--black);
+  height: 100% !important;
+  margin-top: 10rem;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+  padding: 3.5rem 2rem 3.5rem 1.5rem;
+  font-size: 0.9rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.pokemon-detail div[role="tablist"] {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.pokemon-detail div[role="tablist"] button {
+  background-color: transparent;
+  padding: 0;
+  padding-bottom: 0.8rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.pokemon-detail div[role="tablist"] button[data-selected] {
+  color: var(--black);
+  border-bottom: 2px solid var(--black);
+}
+
+.pokemon-detail .desc-image {
+  position: absolute;
+  top: -140px;
+  left: 48%;
+  width: 200px;
+  transform: translateX(-50%);
+}
+
+.desc-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.desc-col-1 {
+  width: 80px;
+  color: #a0a0a0;
+}
+
+.pokemon-detail .description h3 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pokemon-detail .progress {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pokemon-detail .progress-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #cacaca;
+  overflow: hidden;
+}
+
+.pokemon-detail .progress-bar span {
+  height: 4px;
 }

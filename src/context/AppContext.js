@@ -11,7 +11,7 @@ export const AppContextProvider = ({ children }) => {
         return myPoke;
       }
       myPoke.push(pokemon);
-
+      console.log(myPoke);
       return myPoke;
     });
   };

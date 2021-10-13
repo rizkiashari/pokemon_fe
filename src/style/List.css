@@ -1,21 +1,22 @@
 .pokemon-list {
   position: relative;
+  height: 100%;
 }
 
-.list {
+.pokemon-list .list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 2fr));
   grid-auto-rows: 125px;
   gap: 1.5rem;
 }
 
-.title {
+.pokemon-list .title {
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.decoration-bulat {
+.pokemon-list .decoration-bulat {
   position: absolute;
   top: -130px;
   right: -145px;
@@ -24,7 +25,7 @@
   z-index: -1;
 }
 
-.decoration-slide {
+.pokemon-list .decoration-slide {
   position: fixed;
   bottom: 1.3rem;
   right: 2rem;
